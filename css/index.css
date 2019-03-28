@@ -237,6 +237,17 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination button {
+  padding: 1.1rem 5rem;
+  border-radius: 14px;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  background: #17A2B8;
+}
+.home .content-pick .destination button:hover {
+  color: #17A2B8;
+  background: #FFFFFF;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
