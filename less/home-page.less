@@ -1,5 +1,5 @@
 .home {
-
+  
   header {
     .header-content{
       margin-top: 20px;
@@ -27,6 +27,17 @@
         border-radius: 10px;
       }
     }
+    @media @mobile {
+      flex-direction: column;
+      .text-content{
+        width: 100%;
+        padding-right: 0;
+      }
+      .img-content{
+        width: 100%;
+        padding-right: 0;
+      }
+    }
   }
 
   .inverse-content {
@@ -42,6 +53,17 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobile {
+      flex-direction: column-reverse;
+      .text-content{
+        width: 100%;
+        padding-left: 0;
+      }
+      .img-content{
+        width: 100%;
+        padding-right: 0;
+      }
+    }
   }
 
   .content-destination {
@@ -50,6 +72,9 @@
 
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      width: 100%;
     }
   }
 
@@ -64,6 +89,15 @@
       margin-bottom: 30px;
       button{
         .general-btn(@white, @button-bg);
+      }
+    }
+    @media @mobile {
+      flex-direction: column;
+      .destination {
+        width: 100%;
+      }
+      button{
+        width: 100%;
       }
     }
   }

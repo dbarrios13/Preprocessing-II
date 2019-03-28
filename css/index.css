@@ -168,10 +168,20 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+  }
+}
 .navigation {
   width: 1000px;
   margin: 0 auto;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+  }
 }
 .navigation nav {
   width: 80%;
@@ -183,8 +193,16 @@ img {
 .navigation nav a {
   text-decoration: none;
   color: black;
-  padding-right: 29px;
+  padding-right: 4rem;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    flex-direction: column;
+  }
+  .navigation nav div:first-child {
+    margin-bottom: 10px;
+  }
 }
 .home header .header-content {
   margin-top: 20px;
@@ -208,6 +226,19 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -220,12 +251,30 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+  .home .inverse-content .text-content {
+    width: 100%;
+    padding-left: 0;
+  }
+  .home .inverse-content .img-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -247,6 +296,17 @@ img {
 .home .content-pick .destination button:hover {
   color: #17A2B8;
   background: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+  .home .content-pick button {
+    width: 100%;
+  }
 }
 .footer {
   width: 100%;

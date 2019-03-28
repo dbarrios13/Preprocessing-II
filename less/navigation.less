@@ -2,6 +2,9 @@
     width: 1000px;
     margin: 0 auto;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+        width: 100%;
+    }
     nav{
         width: 80%;
         display: flex;
@@ -11,8 +14,14 @@
         a {
             text-decoration: none;
             color: black;
-            padding-right: 29px;
+            padding-right: 4rem;
             font-size: 1.6rem;
+        }
+        @media @mobile {
+            flex-direction: column;
+            div:first-child{
+                margin-bottom: 10px;
+            }
         }
     }
 }
